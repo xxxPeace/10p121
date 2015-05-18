@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="facebook_app_id">472424749579148</string>
+
+    <string name="app_name">Seedr</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <!--General-->
+    <string name="content_missing_description">Missing</string>
+
+    <!--Nav-->
+    <string-array name="nav_drawer_items">
+        <item>Home</item>
+        <item>Settings</item>
+        <item>Profile</item>
+        <item>Share</item>
+    </string-array>
+
+    <array name="nav_drawer_icons">
+        <item>@mipmap/ic_launcher</item>
+        <item>@drawable/ic_settings</item>
+    </array>
+
+    <!--Action Bar-->
+    <string name="action_client_list">Matches</string>
+    <string name="action_matchmaker_list">MatchMaker</string>
+    <string name="title_activity_fbloginactivity">fbloginactivity</string>
+
+    <!--Login-->
+    <string name="login_disclaimer">We do not post to Facebook.</string>
+
+</resources>

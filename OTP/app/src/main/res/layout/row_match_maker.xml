@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:minHeight="84dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listener_image"
+        android:focusable="false"
+        android:contentDescription="@string/content_missing_description"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/container_count">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/image_count"
+            android:src="@drawable/love"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_gravity="center"
+            android:contentDescription="@string/content_missing_description" />
+
+        <TextView
+            tools:text="99"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/count_text"
+            android:textSize="14sp"
+            android:textColor="#ddd"
+            android:textStyle="normal"
+            android:layout_gravity="center"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:singleLine="true" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/container_first"
+        android:layout_toLeftOf="@+id/container_count">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:id="@+id/thumb_frame_first"
+            android:padding="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+            <com.mrcornman.otp.views.CircularImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:id="@+id/thumb_image_first"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                tools:src="@mipmap/ic_launcher"
+                android:layout_gravity="center" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_text_first"
+            android:textSize="16sp"
+            android:textColor="#333"
+            tools:text="Denise"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_centerVertical="true"
+            android:gravity="right"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="false"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_toLeftOf="@+id/thumb_frame_first" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/container_second"
+        android:layout_toRightOf="@+id/container_count">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:id="@+id/thumb_frame_second"
+            android:padding="8dp">
+
+            <com.mrcornman.otp.views.CircularImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:id="@+id/thumb_image_second"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                tools:src="@mipmap/ic_launcher"
+                android:layout_gravity="center" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_text_second"
+            android:textSize="16sp"
+            android:textColor="#333"
+            tools:text="Denise"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/thumb_frame_second" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

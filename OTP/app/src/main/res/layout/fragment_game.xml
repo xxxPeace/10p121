@@ -1,0 +1,71 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mrcornman.otp.fragments.GameFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:id="@+id/stack_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffff6651"
+                android:text="refresh"
+                android:textColor="#ffffff"
+                android:id="@+id/btn_refresh_first"
+                android:layout_weight="1"
+                android:layout_margin="100dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffff6651"
+                android:text="refresh"
+                android:textColor="#ffffff"
+                android:id="@+id/btn_refresh_second"
+                android:layout_weight="1"
+                android:layout_margin="100dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.mrcornman.otp.views.CardStackLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/cardstack_first"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:layout_weight="1"
+                android:layout_centerHorizontal="true"
+                android:padding="8dp">
+            </com.mrcornman.otp.views.CardStackLayout>
+
+            <com.mrcornman.otp.views.CardStackLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/cardstack_second"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:layout_weight="1"
+                android:layout_centerHorizontal="true"
+                android:padding="8dp">
+            </com.mrcornman.otp.views.CardStackLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

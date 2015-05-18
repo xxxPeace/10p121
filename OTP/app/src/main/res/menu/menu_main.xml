@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.mrcornman.otp.activities.MainActivity" >
+    <item android:id="@+id/action_client_list"
+        android:title="@string/action_client_list"
+        android:icon="@mipmap/ic_action_client"
+        android:showAsAction="ifRoom" />
+    <item android:id="@+id/action_matchmaker_list"
+        android:title="@string/action_matchmaker_list"
+        android:icon="@mipmap/ic_action_matchmaker"
+        android:showAsAction="ifRoom" />
+</menu>
